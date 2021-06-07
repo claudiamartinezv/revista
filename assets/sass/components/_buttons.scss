@@ -1,0 +1,14 @@
+.c-btn{
+    background-color: $pink;
+    height: 4rem;
+    color: #fff;
+    border: none;
+    padding: 0 2rem;
+    font-size: $font-20;
+
+    @media screen and (max-width: $break_phone) {
+        height: 3rem;
+        padding: 0 1rem;
+    }
+
+}

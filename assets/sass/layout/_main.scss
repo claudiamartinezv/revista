@@ -1,0 +1,97 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: $break_desktop) {
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .listad-noticias{
+        display: flex;
+        flex-direction: column;
+        padding: 1.2rem;
+        
+
+        @media screen and (min-width: $break_tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            column-gap: 0.63rem;
+        }
+
+        @media screen and (min-width: $break_desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            column-gap: 0.63rem;
+        }
+
+        .noticia{
+            width: 100%;
+
+            .cabecera{
+
+            }
+            .cuerpo{
+            
+                img{
+                    width: 100%;
+                    height: 23vh;
+                    @media screen and (min-width: $break_desktop) {
+                        height: auto;
+                    }
+                }
+                p{
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+
+    .listado-izquierdo{
+        display: none;
+        padding-right: 1rem;
+        @media screen and (max-width: $break_phone) {
+            display: none;
+        }
+        @media screen and (min-width: $break_tablet) {
+            display: none;
+        }
+        @media screen and (min-width: $break_desktop) {
+            display: block;
+        }
+
+        .tags{
+            padding-top: 1rem;
+            border-top: 1px solid #808080;
+            &__ul{
+                display:flex;
+                justify-content: center;
+                margin-block-start:0;
+                margin-block-end:0;
+                padding-left: 0;
+             
+                &__li{
+                    list-style: none;
+                    text-decoration: none;
+                    padding: 0.5rem;
+                    background-color: $blue;
+                    color: white;
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+
+        
+        }
+        .noticias-destacadas{
+            text-align: center;
+
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+  
+    }
+}

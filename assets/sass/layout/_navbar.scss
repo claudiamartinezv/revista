@@ -1,0 +1,53 @@
+.navigation{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.5px solid #808080;
+
+    &__logo{
+        font-size: $font-50;
+        font-family: $font-base;
+        font-weight: $font-black;
+        text-transform: uppercase;
+        padding-left: 1rem;
+    }
+
+    &__list{
+        display: inline-flex;
+        align-items:center;
+        padding-right: 1rem;
+    }
+    &__item{
+        list-style: none;
+        a {
+            display: block;
+            text-align: left;
+            padding: 0.5em;
+            font-family: $font-base;
+            font-size: $font-20;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: $break_phone) {
+            &:first-child{
+                display: none;
+            }
+        }
+        @media screen and (min-width: $break_tablet) {
+            &:first-child{
+                display: block;
+            }
+        }
+        @media screen and (min-width: $break_desktop) {
+            &:first-child{
+                display: block;
+            }
+        }
+    
+    }
+}
+
+
+

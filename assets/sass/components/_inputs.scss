@@ -1,0 +1,17 @@
+.input-newsletter {
+    border-radius: 0;
+    font-size: $font-25;
+    border: none;
+    height: 4rem;
+
+    @media screen and (max-width: $break_phone) {
+        height: 3rem;
+    }
+} 
+
+
+.input-menu{
+    font-size: $font-20;
+    border-radius: 25px;
+
+}

@@ -1,0 +1,14 @@
+.newsletter{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    background-color: $greey;
+    text-align:center;
+    padding: 2rem;
+
+    .group{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+}
